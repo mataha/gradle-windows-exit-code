@@ -1,0 +1,4 @@
+#!/usr/bin/env sh
+
+./gradlew --quiet installDist &&
+    exec ./build/install/gradle-windows-exit-code/bin/gradle-windows-exit-code "$@"
